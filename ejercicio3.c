@@ -6,6 +6,8 @@
 
 #define BUFFER_SIZE 100
 
+//Padre → (escribe) → Pipe → (lee) → Hijo.
+
 int main() {
     int pipe_fd[2]; // pipe_fd[0] = lectura, pipe_fd[1] = escritura
     pid_t pid;
